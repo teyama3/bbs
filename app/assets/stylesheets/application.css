@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ /* form_with */
+ .form-layout input {
+    display: block;
+    margin-bottom: 10px;
+  }

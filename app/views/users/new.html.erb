@@ -1,0 +1,12 @@
+<%= form_with model: @users, html: { class: "form-layout" } do |f| %>
+    <%= f.label :name, "氏名:" %>
+    <%= f.text_field :name %>
+
+    <%= f.label :mail_address, "メールアドレス:" %>
+    <%= f.email_field :mail_address %>
+
+    <%= f.label :password, "パスワード:" %>
+    <%= f.password_field :password%>
+
+    <%= f.submit "登録" %>
+<% end %>
