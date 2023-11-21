@@ -9,10 +9,12 @@
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #
-require "test_helper"
+require 'rails_helper'
 
-class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+RSpec.describe User, type: :model do
+  include_context "project setup"
+
+  it "setup" do
+    binding.pry
+  end
 end

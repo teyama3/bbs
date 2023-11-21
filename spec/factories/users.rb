@@ -9,10 +9,10 @@
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #
-require "test_helper"
-
-class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+FactoryBot.define do
+  factory :user do
+    mail_address { 'test@mail.com' }
+    name         { 'tester' }
+    password     { 'password' }
+  end
 end
